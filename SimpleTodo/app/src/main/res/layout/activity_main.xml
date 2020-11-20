@@ -6,23 +6,37 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <EditText
+        android:id="@+id/todo__item__text__field"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toStartOf="@+id/add__button"
+        android:ems="10"
+        android:hint="Enter a todo item"
+        android:inputType="textPersonName" />
+
     <Button
         android:id="@+id/add__button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add"
-        android:translationX="325"
-        android:translationY="690" />
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="5dp"
+        android:text="Add" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="304dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="-300dp"
-        android:layout_toStartOf="@+id/add__button"
-        android:ems="10"
-        android:hint="Add todo item"
-        android:inputType="textPersonName"
-        android:translationX="10"
-        android:translationY="690" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv__items"
+        android:layout_width="380dp"
+        android:layout_height="453dp"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="90dp" />
+
 </RelativeLayout>
